@@ -1,3 +1,7 @@
+-- Esta vista, muestra un Estado de resultado, mes a mes.
+-- Muestra por mes, Ventas, Costos de (Compra, Envios, comisiones)
+-- la utilidad y el ratio Margen de ganancia.
+
 create view v_EstadoResultado as
 select month(v.fecha_venta) as Mes,
 sum(v.precio_venta) as Venta,
