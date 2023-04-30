@@ -178,6 +178,8 @@ UNLOCK TABLES;
 
 --
 -- Temporary view structure for view `rankingventasproductos`
+-- Esta vista muestra un ranking de productos por ventas en terminos monetarios,
+-- ordenados de mayor a menor.
 --
 
 DROP TABLE IF EXISTS `rankingventasproductos`;
@@ -191,6 +193,8 @@ SET character_set_client = @saved_cs_client;
 
 --
 -- Temporary view structure for view `rankingventasprovincias`
+--Se muestra en una tabla las ventas totales en pesos por provincia
+--ordenadas de mayor a menor en ventas.
 --
 
 DROP TABLE IF EXISTS `rankingventasprovincias`;
